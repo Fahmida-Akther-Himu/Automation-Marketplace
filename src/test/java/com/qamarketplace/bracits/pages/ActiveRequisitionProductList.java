@@ -13,7 +13,6 @@ public class ActiveRequisitionProductList extends BasePage {
 
         return getWebElements(By.linkText("Log out")).size() > 0;
     }
-
     public ActiveRequisitionProductList clickAddToCartBtn() {
         getWebElement(By.cssSelector("button.button-1.cart-button")).click();
         return getInstance(ActiveRequisitionProductList.class);
