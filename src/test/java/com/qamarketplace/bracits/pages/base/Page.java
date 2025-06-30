@@ -18,7 +18,7 @@ public abstract class Page {
     public Page(WebDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, Duration.ofMinutes(General.WAIT_TIME));
-//        wait = new WebDriverWait(driver, Duration.ofSeconds(General.WAIT_TIME));
+//      wait = new WebDriverWait(driver, Duration.ofSeconds(General.WAIT_TIME));
 
     }
 
