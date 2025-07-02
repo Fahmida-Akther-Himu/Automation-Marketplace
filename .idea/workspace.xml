@@ -89,7 +89,7 @@
       <recent name="E:\Learn Automation\Marketplace\src\test\java\com\qamarketplace\bracits\util" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.LoginTest.checkLoginPageTitle">
+  <component name="RunManager" selected="Gradle.LoginTest.loginShouldSucceed">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -223,8 +223,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LoginTest.checkLoginPageTitle" />
         <item itemvalue="Gradle.LoginTest.loginShouldSucceed" />
+        <item itemvalue="Gradle.LoginTest.checkLoginPageTitle" />
         <item itemvalue="Gradle.VendorAcknowledgementTest.successfullyDashboardAcknowledge" />
         <item itemvalue="Gradle.ReceivableOrderListTest.successfullyReceivableOrderListview" />
         <item itemvalue="Gradle.OrderApproveTest.successfullyConfirmedOrder" />
