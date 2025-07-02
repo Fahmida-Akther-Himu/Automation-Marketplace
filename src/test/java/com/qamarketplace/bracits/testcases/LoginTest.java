@@ -9,26 +9,12 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
 
-    /*@Test
+    @Test
     public void checkLoginPageTitle() {
         LoginPage loginPage = page.getInstance(LoginPage.class);
         Assert.assertEquals(loginPage.getPageTittle(), QaMarketPlaceString.LOGIN_TITLE);
     }
 
-    @Test
-    public void loginShouldSucceed() {
-        LoginPage loginPage = page.getInstance(LoginPage.class);
-        Assert.assertEquals(loginPage.getPageTittle(), QaMarketPlaceString.LOGIN_TITLE);
-
-        loginPage = loginPage
-                .clickCommonLogin()
-                .fillUsername(getUsername())
-                .fillPassword(getPassword());
-
-        OverviewPage overviewPage = (OverviewPage) loginPage
-                .clickLoginBtn();
-        Assert.assertTrue(overviewPage.hasLogoutLink());
-    }*/
 
     @Test
     public void loginShouldSucceed_2() {
