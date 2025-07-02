@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="809407cb-1fad-4152-b1a4-6d16c4036322" name="Changes" comment="Shopping cart, Checkout, confirm order page commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="809407cb-1fad-4152-b1a4-6d16c4036322" name="Changes" comment="Order approve test and pending approval orders pages commit">
       <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +88,7 @@
       <recent name="E:\Learn Automation\Marketplace\src\test\java\com\qamarketplace\bracits\util" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.OrderApproveTest.successfullyConfirmedOrder">
+  <component name="RunManager" selected="Gradle.VendorAcknowledgementTest.successfullyDashboardAcknowledge">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -115,30 +114,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.qamarketplace.bracits.testcases.ConfirmOderTest.successfullyConfirmOrder&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="LoginTest.checkLoginPageTitle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.qamarketplace.bracits.testcases.LoginTest.checkLoginPageTitle&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -221,13 +196,37 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="VendorAcknowledgementTest.successfullyDashboardAcknowledge" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.qamarketplace.bracits.testcases.VendorAcknowledgementTest.successfullyDashboardAcknowledge&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.VendorAcknowledgementTest.successfullyDashboardAcknowledge" />
         <item itemvalue="Gradle.OrderApproveTest.successfullyConfirmedOrder" />
         <item itemvalue="Gradle.ConfirmOderTest.successfullyConfirmOrder" />
         <item itemvalue="Gradle.ShoppingCartTest.successfullyViewShoppingCart_1" />
         <item itemvalue="Gradle.LoginTest.loginShouldSucceed" />
-        <item itemvalue="Gradle.LoginTest.checkLoginPageTitle" />
       </list>
     </recent_temporary>
   </component>
@@ -265,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751437009112</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Order approve test and pending approval orders pages commit">
+      <option name="closed" value="true" />
+      <created>1751437634020</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1751437634020</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +295,8 @@
     <MESSAGE value="Active requisition product list view commit" />
     <MESSAGE value="Login page commit" />
     <MESSAGE value="Shopping cart, Checkout, confirm order page commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Shopping cart, Checkout, confirm order page commit" />
+    <MESSAGE value="Order approve test and pending approval orders pages commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Order approve test and pending approval orders pages commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
