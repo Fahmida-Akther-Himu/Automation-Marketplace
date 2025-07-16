@@ -4,7 +4,8 @@ import com.qamarketplace.bracits.pages.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ConfirmOderTest extends BaseTest{
+public class SingleItemOrderTest extends BaseTest{
+    //Order initiation process
     @Test(priority = 0)
     public void successfullyConfirmOrder() throws InterruptedException {
 
@@ -33,7 +34,7 @@ public class ConfirmOderTest extends BaseTest{
 
         Assert.assertTrue(checkoutPage.hasLogoutLink());
     }
-
+    //Order approval process
     @Test(priority = 1)
     public void successfullyApprovedOrder() throws InterruptedException {
 
@@ -50,7 +51,7 @@ public class ConfirmOderTest extends BaseTest{
 
     }
 
-
+    //Order acknowledgement process
     @Test(priority = 2)
     public void successfullyDashboardAcknowledge() throws InterruptedException {
         OverviewPage overviewPage = page.getInstance(LoginPage.class)
@@ -61,6 +62,7 @@ public class ConfirmOderTest extends BaseTest{
                 .clickYesButton();
 
     }
+    //Order item receive process
     @Test(priority = 3)
     public void successfullyReceiveOrder() throws InterruptedException {
         Administration overviewPage = page.getInstance(LoginPage.class)
@@ -79,6 +81,7 @@ public class ConfirmOderTest extends BaseTest{
                 .clickConfirmButton();
 
     }
+    //Order send back process
     @Test(priority = 4)
     public void successfullyVendorSendBack() throws InterruptedException {
         OverviewPage overviewPage = page.getInstance(LoginPage.class)
@@ -92,28 +95,6 @@ public class ConfirmOderTest extends BaseTest{
 
 
     }
-
-//    @Test
-//    public void successfullyReceivableOrderListviewDuplicateChallan() throws InterruptedException {
-//        Administration overviewPage = page.getInstance(LoginPage.class)
-//                .clickCommonLogin()
-//                .fillUsername(getUsername())
-//                .fillPassword(getPassword())
-//                .clickLoginBtn()
-//                .clickAdministration()
-//                .clickOrderManagement()
-//                .clickReceivableOrderList();
-//        CompleteReceiveDetails completeReceiveDetails = page.getInstance(CompleteReceiveDetails.class)
-//                .clickView()
-//                .enterChallanNumber()
-//                .selectReceivableItem()
-//                .enterReceivedRemarks()
-//                .clickSubmitReceivedItems();
-//        ItemReceiveList itemReceiveList=page.getInstance(ItemReceiveList.class)
-//                .clickConfirmButton();
-//
-//
-//    }
 
 
 }

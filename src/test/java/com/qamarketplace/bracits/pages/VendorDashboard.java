@@ -34,7 +34,7 @@ public class VendorDashboard extends BasePage {
 
     // Vendor send back checked from vendor dashboard panel
     public VendorDashboard clickSendBackButton() throws InterruptedException {
-        getWebElement(By.xpath("//a[@onclick='openSendbackModal(2455)']")).click();
+        getWebElement(By.xpath("//a[@onclick='openSendbackModal(2456)']")).click();
         Thread.sleep(parseLong("5000"));
         return this;
     }
@@ -45,36 +45,23 @@ public class VendorDashboard extends BasePage {
         return this;
     }
 
-    //    public VendorDashboard enterSendBackReasons(String sendBack_reasons) throws InterruptedException {
-////        getWebElement(By.id("reasons")).clear();
-//        getWebElement(By.id("reasons")).sendKeys(sendBack_reasons);
-////        getWebElement(By.cssSelector("textarea#reasons.form-control")).sendKeys(sendBack_reasons);
-//        Thread.sleep(parseLong("5000"));
-//        return this;
-//    }
     public VendorDashboard enterSendBackReasons() throws InterruptedException {
-//         getWebElement(By.id("reasons")).clear();
-         //getWebElement(By.xpath("//textarea[@id='reasons']")).clear();
-        getWebElement(By.cssSelector("textarea[id='reasons'][name='reasons']")).sendKeys("SendBackR");
-//        getWebElement(By.id("reasons")).sendKeys("Send back reasons");
-//        getWebElement(By.cssSelector("textarea#reasons.form-control")).sendKeys(sendBack_reasons);
+        getWebElement(By.id("reasons")).clear();
+        getWebElement(By.cssSelector("textarea[id='reasons'][name='reasons']")).sendKeys("SendBackR 2456");
+//      getWebElement(By.xpath("//textarea[@id='reasons']")).clear();
+//      getWebElement(By.id("reasons")).sendKeys("Send back reasons");
+//      getWebElement(By.cssSelector("textarea#reasons.form-control")).sendKeys(sendBack_reasons);
+//      Send back reasons~!@#$%^&*()_+}{|?:?><~`,./?;[]=-\Docx word?confirm? is a verb in its present tense, meaning that it happens right now currently. the word ?confirmed? is this same word in the past tense, meaning that confirmation occurred in the past. 2556
         Thread.sleep(parseLong("5000"));
         return this;
     }
 
-    //    Send back reasons~!@#$%^&*()_+}{|?:?><~`,./?;[]=-\Docx word?confirm? is a verb in its present tense, meaning that it happens right now currently. the word ?confirmed? is this same word in the past tense, meaning that confirmation occurred in the past. 2556
     public VendorDashboard clickSendBackSubmitButton() throws InterruptedException {
         getWebElement(By.cssSelector("form#sendbackForm button[type='submit']")).click();
         Thread.sleep(parseLong("5000"));
         return this;
     }
 
-    //       public OverviewPage clickLoginBtn() {
-//        getWebElement(By.cssSelector("button[type='submit']")).click();
-//        return getInstance(OverviewPage.class);
-//
-//
-//    }
 
     public VendorDashboard clickOrderManagementMenu() throws InterruptedException {
         getWebElement(By.cssSelector("i[class='nav-icon fas fa-shopping-cart']")).click();
