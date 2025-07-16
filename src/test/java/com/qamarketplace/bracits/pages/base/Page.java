@@ -24,6 +24,8 @@ public abstract class Page {
 
     public abstract String getPageTittle();
 
+    public abstract String getHomepageTitle();
+
     public abstract WebElement getWebElement(By selector);
 
     public abstract List<WebElement> getWebElements(By selector);

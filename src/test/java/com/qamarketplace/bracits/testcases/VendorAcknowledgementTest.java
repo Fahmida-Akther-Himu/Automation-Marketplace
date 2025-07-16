@@ -1,9 +1,8 @@
 package com.qamarketplace.bracits.testcases;
 
-import com.fasterxml.jackson.databind.ser.Serializers;
 import com.qamarketplace.bracits.pages.LoginPage;
 import com.qamarketplace.bracits.pages.OverviewPage;
-import com.qamarketplace.bracits.pages.VendorAcknowledge;
+import com.qamarketplace.bracits.pages.VendorDashboard;
 import org.testng.annotations.Test;
 
 public class VendorAcknowledgementTest extends BaseTest {
@@ -15,7 +14,21 @@ public class VendorAcknowledgementTest extends BaseTest {
                 .fillPassword(getPassword())
                 .clickLoginBtn();
 
-        VendorAcknowledge vendorAcknowledge = page.getInstance(VendorAcknowledge.class)
+        VendorDashboard vendorDashboard = page.getInstance(VendorDashboard.class)
+                .clickAcknowledgeButton()
+                .clickYesButton();
+
+    }
+
+    @Test
+    public void successfullyDashboardAcknowledge1() throws InterruptedException {
+        OverviewPage overviewPage = page.getInstance(LoginPage.class)
+                .clickCommonLogin()
+                .fillUsername(getUsername())
+                .fillPassword(getPassword())
+                .clickLoginBtn();
+
+        VendorDashboard vendorDashboard = page.getInstance(VendorDashboard.class)
                 .clickAcknowledgeButton()
                 .clickYesButton();
 

@@ -19,7 +19,7 @@ import java.util.Properties;
 
 public class BaseTest {
     WebDriver driver;
-    private Properties properties;
+     Properties properties;
 
     Page page;
 
@@ -80,4 +80,45 @@ public class BaseTest {
     public String getPassword() {
         return properties.getProperty("Password");
     }
+
+
+    public String getOrderInitiatorUsername() {
+        return properties.getProperty("orderInitiator.username");
+    }
+
+    public String getOrderInitiatorPassword() {
+        return properties.getProperty("orderInitiator.password");
+    }
+
+    public String getOrderApproverUsername() {
+        return properties.getProperty("orderApprover.username");
+    }
+
+    public String getOrderApproverPassword() {
+        return properties.getProperty("orderApprover.password");
+    }
+
+    public String getVendorUsername() {
+        return properties.getProperty("vendorLiza.username");
+    }
+
+    public String getVendorPassword() {
+        return properties.getProperty("vendorLiza.password");
+    }
+
+    public String getOrderReceiverUsername() {
+        return properties.getProperty("orderReceiver.username");
+    }
+
+    public String getOrderReceiverPassword() {
+        return properties.getProperty("orderReceiver.password");
+    }
+
+    public String getSendBackReasons() {
+        return properties.getProperty("sendBackReasons.sendBack_reasons");
+    }
+
+
+
+
 }

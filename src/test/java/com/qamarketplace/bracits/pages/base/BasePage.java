@@ -12,10 +12,15 @@ public class BasePage extends Page {
         super(driver);
     }
 
+
+
     @Override
     public String getPageTittle() {
         return driver.getTitle();
     }
+
+    @Override
+    public String getHomepageTitle(){return driver.getTitle();}
 
     @Override
     public WebElement getWebElement(By selector) {

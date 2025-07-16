@@ -20,7 +20,7 @@ public class ShoppingCart extends BasePage {
     }
 
     public ShoppingCart selectVendor() {
-        getWebElement(By.cssSelector("input[id='radio19']")).click();
+        getWebElement(By.cssSelector("input[id='radio33']")).click();
 
         return this;
     }

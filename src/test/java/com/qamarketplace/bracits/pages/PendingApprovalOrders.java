@@ -25,7 +25,7 @@ public class PendingApprovalOrders extends BasePage {
     }
 
     public PendingApprovalOrders clickOrder(){
-        getWebElement(By.cssSelector("input[value='1086']")).click();
+        getWebElement(By.cssSelector("input[value='2459']")).click();
         return this;
     }
     public PendingApprovalOrders clickApproveButton() throws InterruptedException {

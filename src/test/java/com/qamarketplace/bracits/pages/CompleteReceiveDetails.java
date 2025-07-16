@@ -16,12 +16,12 @@ public class CompleteReceiveDetails extends BasePage {
         return this;
     }
     public CompleteReceiveDetails enterChallanNumber() throws InterruptedException {
-        getWebElement(By.cssSelector("input[id='challanNumber']")).sendKeys("Test receive item 2666 !@# 1");
+        getWebElement(By.cssSelector("input[id='challanNumber']")).sendKeys("Test receive item 2459 !@# 1");
         Thread.sleep(parseLong("2000"));
         return this;
     }
     public CompleteReceiveDetails selectReceivableItem(){
-        getWebElement(By.cssSelector("input[id='itemSelect2666']")).click();
+        getWebElement(By.cssSelector("input[id='itemSelect5443']")).click();
         return this;
     }
     public CompleteReceiveDetails enterReceivedRemarks() throws InterruptedException {
@@ -35,11 +35,11 @@ public class CompleteReceiveDetails extends BasePage {
         return this;
     }
 
-    public ItemReceiveList clickConfirmButton() throws InterruptedException {
-        getWebElement(By.cssSelector("button[id='confirm']")).click();
-        Thread.sleep(parseLong("2000"));
-        return getInstance(ItemReceiveList.class);
-    }
+//    public ItemReceiveList clickConfirmButton() throws InterruptedException {
+//        getWebElement(By.cssSelector("button[id='confirm']")).click();
+//        Thread.sleep(parseLong("2000"));
+//        return getInstance(ItemReceiveList.class);
+//    }
 
 
 

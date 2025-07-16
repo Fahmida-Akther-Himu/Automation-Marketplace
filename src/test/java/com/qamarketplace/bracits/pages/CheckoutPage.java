@@ -21,20 +21,20 @@ public class CheckoutPage extends BasePage {
 
 
     public CheckoutPage enterExpectedLocation() {
-        getWebElement(By.cssSelector("input[id='location38132112']")).sendKeys("Head office");
+        getWebElement(By.cssSelector("input[id='location70233439']")).sendKeys("Head office");
         return this;
     }
 
 
     public CheckoutPage enterReceivingPerson() throws InterruptedException {
-        getWebElement(By.cssSelector("input[name='deliveryInfo38132112']")).sendKeys("00000761");
+        getWebElement(By.cssSelector("input[name='deliveryInfo70233439']")).sendKeys("00000761");
         Thread.sleep(parseLong("7000"));
 
         return this;
     }
 
     public CheckoutPage clickAddSchedule() throws InterruptedException {
-        getWebElement(By.cssSelector("button[id='addScheduleButton38132112']")).click();
+        getWebElement(By.cssSelector("button[id='addScheduleButton70233439']")).click();
         Thread.sleep(parseLong("1000"));
         return this;
     }
